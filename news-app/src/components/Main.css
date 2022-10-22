@@ -1,0 +1,48 @@
+.search {
+  /* background-color: aqua; */
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.searchInput {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: rgb(225, 224, 224);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.searchBtn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.newsImage {
+  height: 15rem;
+  width: 25rem;
+}
+
+/* .newsPage {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.reactionBtn > button > i {
+  font-size: 3rem;
+  /* color: red; */
+}
+
+.commentBox > input {
+  font-size: 2rem;
+}
+
+.commentBox > button {
+  font-size: 2rem;
+}
