@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .header {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 10vh;
   /* width: 100%; */
   display: flex;
@@ -22,11 +22,12 @@
   font-size: 1rem;
   font-weight: bold;
 }
-.nanLinks li {
+.navLinks > li > Link {
   /* border: 1px solid black; */
   cursor: pointer;
   padding: 4px 9px;
   margin: 0 0.5rem;
+  color: black;
 }
 .theme {
   display: flex;
@@ -52,6 +53,7 @@ ul {
 }
 li {
   margin: 2rem;
+  /* color: black; */
 }
 
 li:hover {

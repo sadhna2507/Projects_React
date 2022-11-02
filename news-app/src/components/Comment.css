@@ -1,0 +1,27 @@
+.commentList_area {
+  /* width: 100%; */
+  height: 80px;
+  overflow: auto;
+}
+
+.commentPart {
+  padding: 0 0.5em;
+  display: flex;
+  gap: 4rem;
+  /* color: black; */
+}
+
+.deletion {
+  background: none;
+  border: none;
+  outline: none;
+  /* color: #960000; */
+  cursor: pointer;
+}
+*/ .commentBox > input {
+  font-size: 1rem;
+}
+
+.commentBox > button {
+  font-size: 2rem;
+}

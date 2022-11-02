@@ -1,55 +1,96 @@
-import React, { useState } from 'react';
-// import CommentList from '/CommentList.jsx';
-// import '/CommentApp.css'
+import React, { useState } from "react";
+import "./Comment.css";
+export default function Comments() {
+  const [comment, setComment] = useState("");
+  const [commentList, setCommentList] = useState([]);
 
+  const handleComment = (e) => {
+    setComment(e.target.value);
+    // console.log(e.target.value);
+  };
 
-const ToDoApp = () => {
-    const [inputList, setInputList] = useState('')
-    const [Items, setItems] = useState([]);
-
-    const itemEvent = (event) => {
-        setInputList(event.target.value)
+  const addComment = () => {
+    if (comment.length <= 0) alert("no comment");
+    else {
+      setCommentList([...commentList, comment]);
+      setComment("");
     }
-    const listOfItem = () => {
-        setItems((prevItems) => {
-            return [...prevItems, inputList]
-        });
-        setInputList('');
-        // making it empty
-    };
+  };
 
+  return (
+    // <div className="comment_section">
+    //   <div className="comment_wrapper">
+    //     <div className="comment_box">
+    //       <input
+    //         type="text"
+    //         placeholder="Share your Comments..."
+    //         value={comment}
+    //         onChange={handleComment}
+    //       />
+    //     </div>
+    //     <button className="comment_btn" onClick={addComment}>
+    //       Send
+    //     </button>
+    //     <div className="Comment cta_btn">
+    //       <i className="fa-solid fa-comment"></i>All Comments{" "}
+    //       {commentlist.length}
+    //     </div>
+    //   </div>
+    //   <div className="comments_area">
+    //     {commentlist.map((item) => {
+    //       return (
+    //         <div className="each_comment">
+    //           <button
+    //             className="del_comment"
+    //             onClick={() => {
+    //               let afterDel = commentlist.filter((value) => value !== item);
+    //               setCommentlist([...afterDel]);
+    //             }}
+    //           >
+    //             <i class="fa-regular fa-trash-can"></i>
+    //           </button>
+    //           <p>{item}</p>
+    //         </div>
+    //       );
+    //     })}
+    //   </div>
+    // </div>
 
-    const deleteItems = (id) => {
-        alert("Delete comment?")
+    <>
+      <div className="commentBox">
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="write here..."
+          value={comment}
+          onChange={handleComment}
+        />
+        <button className="commentBtn" onClick={addComment}>
+          comment
+        </button>
+      </div>
+      <div className="commentList_area">
+        {commentList.map((item) => {
+          return (
+            <div className="commentPart">
+              <p>{item}</p>
 
-        setItems((prevItems) => {
-            return prevItems.filter((arrElem, index) => {
-                return index !== id
-            })
-        })
-    }
-
-
-
-    return (
-        <>
-            <div className='main_div'>
-                <div className="center_div">
-                    <input className='inputText' type="text" onChange={itemEvent} value={inputList} />
-                    <button className='comment' onClick={listOfItem}>Comment</button>
-
-                    <ol>
-                        {/* <li>{inputList}</li> */}
-
-                        {Items.map((itemval, index) => {
-                            // return <li>{itemval}</li>
-                            return <CommentList key={index} id={index} text={itemval} onSelect={deleteItems} />
-                        })}
-                    </ol>
-                </div>
-
+              <button
+                className="detetion"
+                onClick={() => {
+                  let afterDeletion = commentList.filter(
+                    (value) => value !== item
+                  );
+                  setCommentList([...afterDeletion]);
+                }}
+              >
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
             </div>
-        </>
-    )
+          );
+        })}
+      </div>
+    </>
+  );
 }
-export default ToDoApp;
