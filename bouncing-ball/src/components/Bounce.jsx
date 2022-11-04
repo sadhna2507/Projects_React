@@ -6,11 +6,7 @@ export function Bounce() {
   const positionArray = ["TopLeft", "TopRight", "BottomRight", "BottomLeft"];
   const [index, setIndex] = useState(0);
 
-  // let rotate=()=>{
-  //   for(let i=0; i<=positionArray.length+1; i++){
-  //     console.log(i)
-  //   }
-  // }
+  
 
   useEffect(() => {
     let interval = setInterval(() => {
