@@ -1,0 +1,24 @@
+{
+  "studentss": [
+    {
+      "names": "Kunal",
+      "email": "Kunal@gmail.com",
+      "id": 6
+    },
+    {
+      "names": "Manasvi singh",
+      "email": "ManasviK@gmail.com",
+      "id": 7
+    },
+    {
+      "names": "abhi",
+      "email": "abhi@gmail.cpm",
+      "id": 8
+    },
+    {
+      "names": "anu",
+      "email": "anu@gmail.com",
+      "id": 9
+    }
+  ]
+}

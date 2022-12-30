@@ -14,7 +14,7 @@ export function Main() {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/everything?q=apple&from=2022-10-19&to=2022-10-19&sortBy=popularity&apiKey=c8e89d00815849119ba4eddbb071fcfd`
+        `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=c8e89d00815849119ba4eddbb071fcfd`
       )
       .then((response) => {
         setPost([...response.data.articles]);
@@ -56,13 +56,15 @@ export function Main() {
                 ></img>
               </div>
 
+              <div className="written">
               <p className="authorName">
                 <span>~</span> {post.author}
                 <span>{post.publishedAt}</span>
               </p>
               <p className="newsContent"> {post.content}</p>
-              <p className="newsDescription">{post.description}</p>
+              <p className="newsDescription">Description: {post.description}</p>
               <p className="newsSource">Source: {post.source.name}</p>
+              </div>
               <div className="readLink">
                 <a className="ReadMore" href={post.url}>
                   Read more
@@ -70,6 +72,8 @@ export function Main() {
               </div>
 
               <Reaction />
+
+              
               <Comment />
             </div>
           </>

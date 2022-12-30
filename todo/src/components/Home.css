@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head_box{
+    background-color: plum;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.add_student{
+    background-color: rgb(26, 223, 26);
+}
+.list_student{
+    background-color: gold;
+}
+.tableHeadCell{
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}

@@ -1,0 +1,15 @@
+.edit_heading{
+    background-color:plum;
+}
+.edit_container{
+    /* border: 2px solid black; */
+    justify-content: center;
+}
+.grid{
+    /* border: 2px solid black; */
+    /* margin-left: 50% */
+    
+}
+.edit_sub_heading{
+    background-color: rgb(26, 223, 26) ;
+}

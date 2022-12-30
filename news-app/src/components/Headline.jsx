@@ -9,7 +9,7 @@ export function Headline() {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/everything?q=apple&from=2022-10-19&to=2022-10-19&sortBy=popularity&apiKey=c8e89d00815849119ba4eddbb071fcfd`
+        `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=c8e89d00815849119ba4eddbb071fcfd`
       )
       .then((response) => {
         console.log(response.data["articles"]);
