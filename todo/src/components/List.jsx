@@ -45,7 +45,7 @@ function List() {
   return (
     <div>
       <Box textAlign="center" p={2} mb={2} className="list_student">
-        <Typography variant="h5">Student List</Typography>
+        <Typography variant="h5">User's List</Typography>
       </Box>
       <TableContainer component={Paper}>
         <Table>

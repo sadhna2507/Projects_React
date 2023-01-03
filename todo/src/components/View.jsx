@@ -38,7 +38,7 @@ function View() {
   return (
     <>
       <Box textAlign="center" p={2} className="list_student">
-        <Typography variant="h4">Student Detail</Typography>
+        <Typography variant="h4">User's Detail</Typography>
       </Box>
       <TableContainer component={Paper}>
         <Table>

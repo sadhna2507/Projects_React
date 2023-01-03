@@ -40,12 +40,12 @@ function Home() {
   return (
     <>
       <Box textAlign="center" className="head_box">
-        <Typography variant="h3">Students Data</Typography>
+        <Typography variant="h3">Database</Typography>
       </Box>
       <Grid container justify="center" spacing={4}>
         <Grid item md={6} xs={12} className="grid">
           <Box textAlign="center" p={2} mb={2} className="add_student">
-            <Typography variant="h5">Add Student</Typography>
+            <Typography variant="h5">Add User</Typography>
           </Box>
           <form noValidate>
             <Grid contaier spacing={2}>

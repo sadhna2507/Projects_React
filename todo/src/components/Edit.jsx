@@ -53,12 +53,12 @@ function Edit() {
   return (
     <>
       <Box textAlign="center" p={2} mb={5} className="edit_heading">
-        <Typography variant="h3">Students Data</Typography>
+        <Typography variant="h3">User's Data</Typography>
       </Box>
       <Grid container justify="center" spacing={4} className="edit_container">
         <Grid item md={6} xs={12} className="grid">
           <Box textAlign="center" p={2} mb={2} className="edit_sub_heading">
-            <Typography variant="h5">Edit Student</Typography>
+            <Typography variant="h5">Edit User</Typography>
           </Box>
           <form>
             <Grid container spacing={2}>
